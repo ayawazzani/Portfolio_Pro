@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Développeur Full-Stack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Portfolio</a>
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#modules">Modules</a></li>
+                <li><a href="#sprints">Sprints</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h3 class="hero-title">AYA-Hammoudi<center>Akkar</center></h3>
+                <h3 class="hero-subtitle">Développeuse Web Full-Stack en formation</h3>
+                <p class="hero-description">Je transforme les idées en applications web complètes, modernes et performantes, du front-end au back-end.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#" class="btn-cv" id="download-cv">
+                        <span>Télécharger mon CV</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                    <div class="social-links">
+                        <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="profile-image-container">
+                    <img src="https://via.placeholder.com/400x400" alt="Photo de profil" class="profile-image">
+                    <div class="glow-effect"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">À propos de <span>moi</span></h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Développeuse Web Full-Stack passionnée</h3>
+                <p>
+                    Je suis une développeuse web full-stack passionnée par la création d'applications web modernes et performantes. Mon approche allie créativité et rigueur technique pour concevoir des expériences utilisateur exceptionnelles. Je m’épanouis dans des environnements stimulants où je peux mettre à profit mes compétences en développement front-end et back-end.
+                </p>
+                <p>
+                    Ma passion pour le code et mon désir constant d’apprentissage me permettent de rester à jour avec les dernières technologies et tendances du développement web.
+                </p>
+            </div>
+
+            <div class="about-info">
+                <div class="info-card">
+                    <h4>Informations personnelles</h4>
+                    <ul class="info-list">
+                        <li>
+                            <span class="info-label">Nom :</span>
+                            <span class="info-value">Aya Hammoudi Akkar Ouazzani</span>
+                        </li>
+                        <li>
+                            <span class="info-label">Âge :</span>
+                            <span class="info-value">20 ans</span>
+                        </li>
+                        <li>
+                            <span class="info-label">Localisation :</span>
+                            <span class="info-value">Maroc, Tanger</span>
+                        </li>
+                        <li>
+                            <span class="info-label">Email :</span>
+                            <a href="mailto:ayawazzani6@gmail.com" class="info-value">ayawazzani6@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skills-card">
+                    <h4>Compétences principales</h4>
+                    <div class="skills-container">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5 & CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name"></span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="modules" id="modules">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Modules & <span>Ateliers</span></h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">Découvrez les modules que j'ai maîtrisés à travers des projets pratiques</p>
+        </div>
+
+        <div class="modules-grid">
+            <!-- Carte MySQL -->
+            <div class="module-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="module-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>MySQL</h3>
+                <p>Conception de bases de données robustes et flexibles, avec optimisation des performances et exécution de requêtes avancées en utilisant MySQL.</p>
+                <a href="mysql.html" class="module-link" target="_blank">Voir le projet <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Carte MongoDB -->
+            <div class="module-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="module-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3>MongoDB</h3>
+                <p>Maîtrise de MongoDB pour créer des bases de données NoSQL, gérer les données et les intégrer avec le backend des applications web.</p>
+                <a href="mongo.html" class="module-link" target="_blank">Voir le projet <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Carte JavaScript -->
+            <div class="module-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="module-icon">
+                    <i class="fab fa-js"></i>
+                </div>
+                <h3>JavaScript</h3>
+                <p>Développement d'interfaces front-end avec JavaScript, gestion des événements et manipulation des données de manière interactive et fluide.</p>
+                <a href="javascript.html" class="module-link" target="_blank">Voir le projet <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Carte React -->
+            <div class="module-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="module-icon">
+                    <i class="fab fa-react"></i>
+                </div>
+                <h3>React</h3>
+                <p>Développement d'interfaces utilisateur réactives avec React, gestion d'état avancée et intégration d'API.</p>
+                <a href="React.html" class="module-link" target="_blank">Voir le projet <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section Sprints Agile -->
+<section class="sprints" id="sprints">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Sprints <span>Agile</span></h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">Découvrez ma méthodologie de travail à travers les sprints de mes projets</p>
+        </div>
+
+        <div class="sprints-container">
+            <!-- Sprint 1 -->
+            <div class="sprint-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="sprint-header">
+                    <span class="sprint-badge">Sprint 1</span>
+                    <h3>Conception du Prototype (Figma)</h3>
+                </div>
+                <div class="sprint-body">
+                    <h4>User Stories :</h4>
+                    <ul class="user-stories">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="sprint-result">
+                        <h4>Résultat :</h4>
+                        <p></p>
+                    </div>
+                    <a href="#" class="demo-link" target="_blank">Voir la démo <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- Sprint 2 -->
+            <div class="sprint-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="sprint-header">
+                    <span class="sprint-badge">Sprint 2</span>
+                    <h3>Maquette Statique Responsive</h3>
+                </div>
+                <div class="sprint-body">
+                    <h4>User Stories :</h4>
+                    <ul class="user-stories">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="sprint-result">
+                        <h4>Résultat :</h4>
+                        <p></p>
+                    </div>
+                    <a href="#" class="demo-link" target="_blank">Voir la démo <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- Sprint 3 -->
+            <div class="sprint-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="sprint-header">
+                    <span class="sprint-badge">Sprint 3</span>
+                    <h3>Déploiement en ligne</h3>
+                </div>
+                <div class="sprint-body">
+                    <h4>User Stories :</h4>
+                    <ul class="user-stories">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="sprint-result">
+                        <h4>Résultat :</h4>
+                        <p></p>
+                    </div>
+                    <a href="#" class="demo-link" target="_blank">Voir la démo <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+            <!-- Sprint 4 -->
+            <div class="sprint-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="sprint-header">
+                    <span class="sprint-badge">Sprint 4</span>
+                    <h3>Application Web Dynamique PHP/MySQL</h3>
+                </div>
+                <div class="sprint-body">
+                    <h4>User Stories :</h4>
+                    <ul class="user-stories">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="sprint-result">
+                        <h4>Résultat :</h4>
+                        <p></p>
+                    </div>
+                    <a href="#" class="demo-link" target="_blank">Voir la démo <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- Sprint 5 -->
+            <div class="sprint-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="sprint-header">
+                    <span class="sprint-badge">Sprint 5</span>
+                    <h3>QuickAnnonces : Du clic PHP à MongoDB Atlas</h3>
+                </div>
+                <div class="sprint-body">
+                    <h4>User Stories :</h4>
+                    <ul class="user-stories">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="sprint-result">
+                        <h4>Résultat :</h4>
+                        <p></p>
+                    </div>
+                    <a href="#" class="demo-link" target="_blank">Voir la démo <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Contact -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Contactez<span>-moi</span></h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">N'hésitez pas à me contacter pour toute opportunité ou collaboration</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right">
+                <h3>Informations de contact</h3>
+                <p><i class="fas fa-envelope"></i>ayawazzani6@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +212609286129</p>
+                <p><i class="fas fa-map-marker-alt"></i> Maroc</p>
+                
+                <div class="social-links">
+                    <a href="#" target="_blank" class="social-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" target="_blank" class="social-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" target="_blank" class="social-icon" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank" class="social-icon" title="Portfolio">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                </div>
+            </div>
+
+            <form class="contact-form" data-aos="fade-left">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Nom Complet</label>
+                    <span class="focus-border"></span>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                    <span class="focus-border"></span>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" required>
+                    <label for="subject">Sujet</label>
+                    <span class="focus-border"></span>
+                </div>
+                
+                <div class="form-group textarea-group">
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message">Votre Message</label>
+                    <span class="focus-border"></span>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <span>Envoyer le message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-copyright">
+                <p>&copy; <span id="current-year"></span> Votre Nom. Tous droits réservés.</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#" class="footer-link">Mentions légales</a>
+                <span class="divider">|</span>
+                <a href="#" class="footer-link">Politique de confidentialité</a>
+                <span class="divider">|</span>
+                <a href="#" class="footer-link">CV</a>
+            </div>
+            
+            <div class="footer-social">
+                <a href="#" target="_blank" class="social-icon" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank" class="social-icon" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:email@example.com" class="social-icon" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="#" target="_blank" class="social-icon" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    
+</body>
+</html>

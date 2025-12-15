@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB Ateliers - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Portfolio</a>
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html#accueil">Accueil</a></li>
+                <li><a href="index.html#about">À propos</a></li>
+                <li><a href="index.html#modules">Modules</a></li>
+                <li><a href="index.html#sprints">Sprints</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Ateliers Section -->
+    <section class="ateliers-container">
+        <div class="section-header">
+            <h2 class="section-title">Ateliers <span>MongoDB</span></h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">Découvrez mes réalisations et projets MySQL</p>
+        </div>
+
+        <div class="ateliers-grid">
+            <!-- Atelier 1 -->
+            <div class="atelier-card">
+                <h3>Atelier 1 : Gestion des étudiants avec Mockaroo</h3>
+                <p>Gestion des données étudiantes avec MongoDB à travers l’importation de données Mockaroo, les requêtes avancées et la manipulation des tableaux.</p>
+                <div class="atelier-actions">
+                    <button class="open-btn mongodb" data-tech="mongodb" data-index="0">📂 Ouvrir PDF</button>
+                </div>
+            </div>
+
+            <!-- Atelier 2 -->
+            <div class="atelier-card">
+                <h3>Atelier 2 : Gestion des produits dans un système de vente en ligne</h3>
+                <p>Gestion des produits e-commerce avec MongoDB à travers la modélisation orientée document, les requêtes avancées et la manipulation des tableaux.</p>
+                <div class="atelier-actions">
+                    <button class="open-btn mongodb" data-tech="mongodb" data-index="1">📂 Ouvrir PDF</button>
+                </div>
+            </div>
+
+            <!-- Atelier 3 -->
+            <div class="atelier-card">
+                <h3>Atelier 3 :Requêtes avancées et agrégations dans un système de vente en ligne</h3>
+                <p>Analyse avancée des données e-commerce avec MongoDB en utilisant les agrégations, pipelines et jointures entre collections.</p>
+                <div class="atelier-actions">
+                    <button class="open-btn mongodb" data-tech="mongodb" data-index="2">📂 Ouvrir PDF</button>
+                </div>
+            </div>
+
+            <!-- Atelier 4 -->
+            <div class="atelier-card">
+                <h3>Atelier 4 : Gestion avancée des données dans un système de vente en ligne</h3>
+                <p>Exploitation avancée de MongoDB avec index textuels, vues analytiques, gestion des utilisateurs et exportation des données.</p>
+                <div class="atelier-actions">
+                    <button class="open-btn mongodb" data-tech="mongodb" data-index="3">📂 Ouvrir PDF</button>
+                </div>
+            </div>
+
+            <!-- Atelier 5 -->
+            <div class="atelier-card">
+                <h3>Atelier 5 : Gestion des salariés de la société DKM et Gestion des terrains et des notaires</h3>
+                <p>Cet exercice1 vise à gérer les salariés de DKM avec une base NoSQL, en structurant les documents et en réalisant des opérations de tri, comptage et suppression, et Cet exercice2 consiste à gérer des documents de terrains et de notaires dans une base NoSQL, en réalisant des requêtes, des agrégations et des mises à jour sur les données.</p>
+                <div class="atelier-actions">
+                    <button class="open-btn mongodb" data-tech="mongodb" data-index="4">📂 Ouvrir PDF</button>
+                </div>
+            </div>
+
+             <!-- Atelier 6 -->
+            <div class="atelier-card">
+                <h3>Atelier 6 :  Python et MongoDB — Gestion des utilisateurs, produits et commandes</h3>
+                <p>Cet atelier permet de maîtriser la gestion d’une base MongoDB via Python, en réalisant des opérations CRUD, des filtres, mises à jour, suppressions, agrégations, index et jointures entre collections pour exploiter efficacement des données orientées documents.</p>
+                <div class="atelier-actions">
+                    <button class="open-btn mongodb" data-tech="mongodb" data-index="5">📂 Ouvrir PDF</button>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-copyright">
+                <p>&copy; <span id="current-year">2024</span> Votre Nom. Tous droits réservés.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html#accueil" class="footer-link">Accueil</a>
+                <span class="divider">|</span>
+                <a href="index.html#about" class="footer-link">À propos</a>
+                <span class="divider">|</span>
+                <a href="index.html#contact" class="footer-link">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

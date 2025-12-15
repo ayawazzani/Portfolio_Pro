@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySQL Ateliers - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Portfolio</a>
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html#accueil">Accueil</a></li>
+                <li><a href="index.html#about">À propos</a></li>
+                <li><a href="index.html#modules">Modules</a></li>
+                <li><a href="index.html#sprints">Sprints</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Ateliers Section -->
+    <section class="ateliers-container">
+        <div class="section-header">
+            <h2 class="section-title">Ateliers <span>MySQL</span></h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">Découvrez mes réalisations et projets MySQL</p>
+        </div>
+
+        <div class="ateliers-grid">
+            <!-- Atelier 1 -->
+            <div class="atelier-card">
+                <h3>Atelier 1 : Gestion commerciale – Conception d’une base de données SQL</h3>
+                <p>Atelier SQL complet couvrant la conception de bases de données, les requêtes avancées, l’optimisation et la sécurité dans un contexte de gestion commerciale.</p>
+                <div class="atelier-actions">
+                    <button class="open-btn" data-index="0">📂 Ouvrir PDF</button>
+                </div>
+
+            </div>
+
+            <!-- Atelier 2 -->
+            <div class="atelier-card">
+                <h3>Atelier 2 : Gestion d’un centre de formation – Procédures et fonctions stockées MySQL</h3>
+                <p>Gestion complète des sessions de formation en MySQL à l’aide de procédures, fonctions, structures de contrôle et automatisation.</p>
+                <div class="atelier-actions">
+                    <button class="open-btn" data-index="1">📂 Ouvrir PDF</button>
+                </div>
+            </div>
+
+            <!-- Atelier 3 -->
+            <div class="atelier-card">
+                <h3>Atelier 3 : Gestion budgétaire des projets – Curseurs MySQL</h3>
+                <p>Automatisation du suivi budgétaire des projets grâce aux curseurs, procédures stockées, fonctions SQL, alertes et vues.</p>
+                <div class="atelier-actions">
+                    <button class="open-btn" data-index="2">📂 Ouvrir PDF</button>
+                </div>
+            </div>
+
+            <!-- Atelier 4 -->
+            <div class="atelier-card">
+                <h3>Atelier 4 : Gestion des comptes – Triggers MySQL</h3>
+                <p>Met en place des triggers BEFORE INSERT pour contrôler l’intégrité des comptes, générer des messages d’erreur, et automatiser les vérifications métier.</p>
+                <div class="atelier-actions">
+                    <button class="open-btn" data-index="3">📂 Ouvrir PDF</button>
+                </div>
+            </div>
+
+            <!-- Atelier 5 -->
+            <div class="atelier-card">
+                <h3>Atelier 5 : Gestion des véhicules de service de la société DKM</h3>
+                <p>Utilisation avancée de MySQL (procédures, fonctions et triggers) pour gérer les salariés, les services et l’affectation des véhicules selon des règles métier précises.</p>
+                <div class="atelier-actions">
+                    <button class="open-btn" data-index="4">📂 Ouvrir PDF</button>
+                </div>
+            </div>
+
+            <!-- Atelier 6 -->
+            <div class="atelier-card">
+                <h3>Atelier 6 : Gestion des données notariales avec MySQL</h3>
+                <p>Gestion notariale sous MySQL à travers requêtes complexes, fonctions, procédures et déclencheurs basés sur un modèle relationnel issu de l’UML.</p>
+                <div class="atelier-actions">
+                    <button class="open-btn" data-index="5">📂 Ouvrir PDF</button>
+                </div>
+            </div>
+
+            <!-- Atelier 7 -->
+            <div class="atelier-card">
+                <h3>Atelier 7 : Gestion des événements et inscriptions avec MySQL</h3>
+                <p>Automatisation de la gestion des événements et des inscriptions à l’aide de procédures et fonctions MySQL dans un contexte professionnel.</p>
+                <div class="atelier-actions">
+                    <button class="open-btn" data-index="6">📂 Ouvrir PDF</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-copyright">
+                <p>&copy; <span id="current-year">2024</span> Votre Nom. Tous droits réservés.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html#accueil" class="footer-link">Accueil</a>
+                <span class="divider">|</span>
+                <a href="index.html#about" class="footer-link">À propos</a>
+                <span class="divider">|</span>
+                <a href="index.html#contact" class="footer-link">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
