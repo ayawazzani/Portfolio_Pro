@@ -6,6 +6,8 @@
     <title>Portfolio Développeur Full-Stack</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,15 +16,13 @@
         <div class="nav-container">
             <a href="#" class="logo">Portfolio</a>
             <div class="menu-icon" id="menu-icon">
-                <div class="bar"></div>
+                <div class="bar" href=""></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#about">À propos</a></li>
-                <li><a href="#modules">Modules</a></li>
-                <li><a href="#sprints">Sprints</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -42,15 +42,15 @@
                         <i class="fas fa-download"></i>
                     </a>
                     <div class="social-links">
-                        <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/ayawazzani" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/aya-hammoudi-akkar-05594432a" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
             
             <div class="hero-image">
                 <div class="profile-image-container">
-                    <img src="https://via.placeholder.com/400x400" alt="Photo de profil" class="profile-image">
+                    <img src="images/photo_profile.jpeg" alt="Photo de profil" class="profile-image">
                     <div class="glow-effect"></div>
                 </div>
             </div>
@@ -63,73 +63,48 @@
             <div class="section-divider"></div>
         </div>
 
-        <div class="about-content">
-            <div class="about-text">
-                <h3>Développeuse Web Full-Stack passionnée</h3>
-                <p>
-                    Je suis une développeuse web full-stack passionnée par la création d'applications web modernes et performantes. Mon approche allie créativité et rigueur technique pour concevoir des expériences utilisateur exceptionnelles. Je m’épanouis dans des environnements stimulants où je peux mettre à profit mes compétences en développement front-end et back-end.
-                </p>
-                <p>
-                    Ma passion pour le code et mon désir constant d’apprentissage me permettent de rester à jour avec les dernières technologies et tendances du développement web.
-                </p>
+        <div class="about-grid">
+            <div class="about-intro-card">
+                <h3 style="color: #d4af37;">Développeuse Web Full-Stack passionnée</h3><br>
+                <p>Passionnée par l'écosystème <strong>JavaScript</strong>, je conçois des interfaces modernes et des architectures back-end performantes. Avec une base solide en HTML/CSS et une maîtrise des frameworks actuels.</p>
+                <p>Ma passion pour le code me permet de rester à jour avec les dernières technologies.</p>
             </div>
 
-            <div class="about-info">
-                <div class="info-card">
-                    <h4>Informations personnelles</h4>
-                    <ul class="info-list">
-                        <li>
-                            <span class="info-label">Nom :</span>
-                            <span class="info-value">Aya Hammoudi Akkar Ouazzani</span>
-                        </li>
-                        <li>
-                            <span class="info-label">Âge :</span>
-                            <span class="info-value">20 ans</span>
-                        </li>
-                        <li>
-                            <span class="info-label">Localisation :</span>
-                            <span class="info-value">Maroc, Tanger</span>
-                        </li>
-                        <li>
-                            <span class="info-label">Email :</span>
-                            <a href="mailto:ayawazzani6@gmail.com" class="info-value">ayawazzani6@gmail.com</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="info-card">
+                <h4><i class="fas fa-user"></i> Informations</h4>
+                <ul class="info-list">
+                    <li><span class="info-label">Nom:</span> <span class="info-value">Aya Hammoudi Akkar Ouazzani</span></li>
+                    <li><span class="info-label">Ville:</span> <span class="info-value">Maroc, Tanger</span></li>
+                    <li><span class="info-label">Email:</span> <span class="info-value">ayawazzani6@gmail.com</span></li>
+                    <li><span class="info-label">Langues:</span> <span class="info-value"><strong style="color: #d4af37;">Arabe</strong> : Langue maternelle<br><strong style="color: #d4af37;">Français</strong> : Niveau intermédiaire<br><strong style="color: #d4af37;">Anglais</strong> : Niveau intermédiaire</span></li>
+                    
+                </ul>
+            </div>
 
-                <div class="skills-card">
-                    <h4>Compétences principales</h4>
-                    <div class="skills-container">
-                        <div class="skill-item">
-                            <span class="skill-name">HTML5 & CSS3</span>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 90%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">JavaScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 85%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">React.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 50%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name"></span>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 75%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">MongoDB</span>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 70%;"></div>
-                            </div>
-                        </div>
+            <div class="skills-card-modern">
+                <h4 style="color: #715e1d;"><i class="fas fa-laptop-code"></i> Compétences</h4>
+                <div class="skills-category">
+                    <h5>FRONT-END</h5>
+                    <div class="tags">
+                        <span>HTML5</span> <span>CSS3</span> <span>JS</span> <span>React</span> <span>Bootstrap</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h5>BACK-END</h5>
+                    <div class="tags">
+                        <span>PHP</span> <span>Python</span> <span>Laravel</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h5>DATABASES</h5>
+                    <div class="tags">
+                        <span>MySQL</span> <span>MongoDB</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h5>DESIGN & TOOLS</h5>
+                    <div class="tags">
+                        <span>Figma</span> <span>Git</span> <span>Agile</span>
                     </div>
                 </div>
             </div>
@@ -137,169 +112,88 @@
     </div>
 </section>
 
-<section class="modules" id="modules">
+<section class="projects" id="projects">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Modules & <span>Ateliers</span></h2>
+            <h2 class="section-title">Mes <span>Projets</span></h2>
             <div class="section-divider"></div>
-            <p class="section-subtitle">Découvrez les modules que j'ai maîtrisés à travers des projets pratiques</p>
+            <p class="section-subtitle">Découvrez mes dernières réalisations web et applications</p>
         </div>
 
-        <div class="modules-grid">
-            <!-- Carte MySQL -->
-            <div class="module-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="module-icon">
-                    <i class="fas fa-database"></i>
-                </div>
-                <h3>MySQL</h3>
-                <p>Conception de bases de données robustes et flexibles, avec optimisation des performances et exécution de requêtes avancées en utilisant MySQL.</p>
-                <a href="mysql.html" class="module-link" target="_blank">Voir le projet <i class="fas fa-arrow-right"></i></a>
-            </div>
-
-            <!-- Carte MongoDB -->
-            <div class="module-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="module-icon">
-                    <i class="fas fa-server"></i>
-                </div>
-                <h3>MongoDB</h3>
-                <p>Maîtrise de MongoDB pour créer des bases de données NoSQL, gérer les données et les intégrer avec le backend des applications web.</p>
-                <a href="mongo.html" class="module-link" target="_blank">Voir le projet <i class="fas fa-arrow-right"></i></a>
-            </div>
-
-            <!-- Carte JavaScript -->
-            <div class="module-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="module-icon">
-                    <i class="fab fa-js"></i>
-                </div>
-                <h3>JavaScript</h3>
-                <p>Développement d'interfaces front-end avec JavaScript, gestion des événements et manipulation des données de manière interactive et fluide.</p>
-                <a href="javascript.html" class="module-link" target="_blank">Voir le projet <i class="fas fa-arrow-right"></i></a>
-            </div>
-
-            <!-- Carte React -->
-            <div class="module-card" data-aos="fade-up" data-aos-delay="400">
-                <div class="module-icon">
-                    <i class="fab fa-react"></i>
-                </div>
-                <h3>React</h3>
-                <p>Développement d'interfaces utilisateur réactives avec React, gestion d'état avancée et intégration d'API.</p>
-                <a href="React.html" class="module-link" target="_blank">Voir le projet <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Section Sprints Agile -->
-<section class="sprints" id="sprints">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Sprints <span>Agile</span></h2>
-            <div class="section-divider"></div>
-            <p class="section-subtitle">Découvrez ma méthodologie de travail à travers les sprints de mes projets</p>
-        </div>
-
-        <div class="sprints-container">
-            <!-- Sprint 1 -->
-            <div class="sprint-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="sprint-header">
-                    <span class="sprint-badge">Sprint 1</span>
-                    <h3>Conception du Prototype (Figma)</h3>
-                </div>
-                <div class="sprint-body">
-                    <h4>User Stories :</h4>
-                    <ul class="user-stories">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <div class="sprint-result">
-                        <h4>Résultat :</h4>
-                        <p></p>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/projet1.jpg" alt="Projet 1">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://ayawazzani.github.io/COFEE/" target="_blank" title="Voir Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/ayawazzani/COFEE" target="_blank" title="GitHub Source"><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
-                    <a href="#" class="demo-link" target="_blank">Voir la démo <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="project-info">
+                    <h3>Site web responsive pour un café </h3>
+                    <p>Conception et développement d'une interface web moderne et immersive pour un café-restaurant. L'objectif était de créer une expérience utilisateur fluide tout en mettant en avant l'identité visuelle de la marque. Le projet intègre un menu dynamique, une section de témoignages interactive et un design entièrement responsive (adapté aux mobiles).</p>
+                    <div class="project-tags">
+                        <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+                    </div>
                 </div>
             </div>
 
-            <!-- Sprint 2 -->
-            <div class="sprint-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="sprint-header">
-                    <span class="sprint-badge">Sprint 2</span>
-                    <h3>Maquette Statique Responsive</h3>
-                </div>
-                <div class="sprint-body">
-                    <h4>User Stories :</h4>
-                    <ul class="user-stories">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <div class="sprint-result">
-                        <h4>Résultat :</h4>
-                        <p></p>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/projet2.jpg" alt="Projet 2">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" target="_blank" title="Voir Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/ayawazzani/Blog-with-Admin-Panel" target="_blank" title="GitHub Source"><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
-                    <a href="#" class="demo-link" target="_blank">Voir la démo <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="project-info">
+                    <h3>Application de gestion de blog – PHP & MySQL</h3>
+                    <p>Application de productivité pour organiser les sprints et les tâches d'équipe.</p>
+                    <div class="project-tags">
+                        <span>Laravel</span> <span>MySQL</span> <span>Bootstrap</span>
+                    </div>
                 </div>
             </div>
 
-            <!-- Sprint 3 -->
-            <div class="sprint-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="sprint-header">
-                    <span class="sprint-badge">Sprint 3</span>
-                    <h3>Déploiement en ligne</h3>
-                </div>
-                <div class="sprint-body">
-                    <h4>User Stories :</h4>
-                    <ul class="user-stories">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <div class="sprint-result">
-                        <h4>Résultat :</h4>
-                        <p></p>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/projet3.jpg" alt="Projet 3">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" target="_blank" title="Voir Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" target="_blank" title="GitHub Source"><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
-                    <a href="#" class="demo-link" target="_blank">Voir la démo <i class="fas fa-external-link-alt"></i></a>
                 </div>
-            </div>
-            
-            <!-- Sprint 4 -->
-            <div class="sprint-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="sprint-header">
-                    <span class="sprint-badge">Sprint 4</span>
-                    <h3>Application Web Dynamique PHP/MySQL</h3>
-                </div>
-                <div class="sprint-body">
-                    <h4>User Stories :</h4>
-                    <ul class="user-stories">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <div class="sprint-result">
-                        <h4>Résultat :</h4>
-                        <p></p>
+                <div class="project-info">
+                    <h3>Quick Annonce – Application Front-End (React)</h3>
+                    <p>Un site vitrine moderne et responsive pour présenter mon identité et mes compétences.</p>
+                    <div class="project-tags">
+                        <span>HTML/CSS</span> <span>JavaScript</span> <span>Figma</span>
                     </div>
-                    <a href="#" class="demo-link" target="_blank">Voir la démo <i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
 
-            <!-- Sprint 5 -->
-            <div class="sprint-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="sprint-header">
-                    <span class="sprint-badge">Sprint 5</span>
-                    <h3>QuickAnnonces : Du clic PHP à MongoDB Atlas</h3>
-                </div>
-                <div class="sprint-body">
-                    <h4>User Stories :</h4>
-                    <ul class="user-stories">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <div class="sprint-result">
-                        <h4>Résultat :</h4>
-                        <p></p>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/projet4.jpg" alt="Projet 4">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" target="_blank" title="Voir Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" target="_blank" title="GitHub Source"><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
-                    <a href="#" class="demo-link" target="_blank">Voir la démo <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="project-info">
+                    <h3>Quick Annonce – Application Back-end (Larave;)</h3>
+                    <p>Interface intuitive utilisant une API externe pour afficher les prévisions en temps réel.</p>
+                    <div class="project-tags">
+                        <span>JavaScript</span> <span>API Rest</span> <span>CSS Grid</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -320,25 +214,19 @@
                 <h3>Informations de contact</h3>
                 <p><i class="fas fa-envelope"></i>ayawazzani6@gmail.com</p>
                 <p><i class="fas fa-phone"></i> +212609286129</p>
-                <p><i class="fas fa-map-marker-alt"></i> Maroc</p>
+                <p><i class="fas fa-map-marker-alt"></i> Maroc, Tanger</p>
                 
                 <div class="social-links">
-                    <a href="#" target="_blank" class="social-icon" title="GitHub">
+                    <a href="https://github.com/ayawazzani" target="_blank" class="social-icon" title="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="#" target="_blank" class="social-icon" title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/aya-hammoudi-akkar-05594432a" target="_blank" class="social-icon" title="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" target="_blank" class="social-icon" title="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" target="_blank" class="social-icon" title="Portfolio">
-                        <i class="fas fa-globe"></i>
                     </a>
                 </div>
             </div>
 
-            <form class="contact-form" data-aos="fade-left">
+            <form class="contact-form" data-aos="fade-left" id="contact-form">
                 <div class="form-group">
                     <input type="text" id="name" name="name" required>
                     <label for="name">Nom Complet</label>
@@ -377,7 +265,7 @@
     <div class="container">
         <div class="footer-content">
             <div class="footer-copyright">
-                <p>&copy; <span id="current-year"></span> Votre Nom. Tous droits réservés.</p>
+                <p>&copy; <span id="current-year"></span> Aya Hammoudi Akkar Ouazzani. Tous droits réservés.</p>
             </div>
             
             <div class="footer-links">
@@ -389,17 +277,14 @@
             </div>
             
             <div class="footer-social">
-                <a href="#" target="_blank" class="social-icon" title="GitHub">
+                <a href="https://github.com/ayawazzani" target="_blank" class="social-icon" title="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="#" target="_blank" class="social-icon" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/aya-hammoudi-akkar-05594432a#" target="_blank" class="social-icon" title="LinkedIn">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="mailto:email@example.com" class="social-icon" title="Email">
+                <a href="mailto:ayawazzani6@gmail.com" class="social-icon" title="Email">
                     <i class="fas fa-envelope"></i>
-                </a>
-                <a href="#" target="_blank" class="social-icon" title="Twitter">
-                    <i class="fab fa-twitter"></i>
                 </a>
             </div>
         </div>
