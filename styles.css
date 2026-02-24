@@ -3,8 +3,9 @@
     --primary: #d4af37;
     --primary-light: #f1e5ac;
     --bg-dark: #0a0a0a;
+    --bg-gradient: radial-gradient(circle at top, #1a1a1a 0%, #0a0a0a 100%);
     --text-light: #f8f9fa;
-    --transition: all 0.3s ease;
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Reset et styles de base */
@@ -16,7 +17,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--bg-dark);
+    background: var(--bg-gradient);
+    background-attachment: fixed;
     color: var(--text-light);
     line-height: 1.6;
     overflow-x: hidden;
@@ -24,13 +26,13 @@ body {
 
 /* Navbar */
 .navbar {
-    
+    position: fixed;
+    top: 0;
     width: 100%;
     padding: 1.5rem 0;
     z-index: 1000;
-    background: rgba(10, 10, 10, 0.8);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: transparent;
+    transition: var(--transition);
 }
 
 .nav-container {

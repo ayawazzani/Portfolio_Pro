@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // 1. Sélection des éléments (مرة واحدة فقط لجميع الوظائف)
     const menuIcon = document.getElementById('menu-icon');
     const navLinks = document.getElementById('nav-links');
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function toggleMenu() {
         navLinks.classList.toggle('active');
         menuIcon.classList.toggle('active');
-        
+
         // Animation des barres
         if (navLinks.classList.contains('active')) {
             bars[0].style.transform = 'rotate(45deg) translate(5px, 6px)';
@@ -34,16 +34,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // 3. Animation de la Navbar au Scroll
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         const navbar = document.querySelector('.navbar');
         if (window.scrollY > 50) {
-            navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+            navbar.style.background = 'rgba(10, 10, 10, 0.9)';
             navbar.style.padding = '1rem 0';
-            navbar.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.2)';
+            navbar.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.4)';
+            navbar.style.backdropFilter = 'blur(10px)';
         } else {
-            navbar.style.background = 'rgba(10, 10, 10, 0.8)';
+            navbar.style.background = 'transparent';
             navbar.style.padding = '1.5rem 0';
             navbar.style.boxShadow = 'none';
+            navbar.style.backdropFilter = 'none';
         }
     });
 
@@ -54,18 +56,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 5. Effet de téléchargement du CV
     if (downloadCvBtn) {
-        downloadCvBtn.addEventListener('click', function(e) {
+        downloadCvBtn.addEventListener('click', function (e) {
             const downloadText = this.querySelector('span');
             const downloadIcon = this.querySelector('i');
-            
+
             // نترك الرابط يعمل (تنزيل الملف) لكن نضيف التأثير البصري
             downloadText.textContent = 'Téléchargement...';
             downloadIcon.className = 'fas fa-spinner fa-spin';
-            
+
             setTimeout(() => {
                 downloadText.textContent = 'CV Téléchargé !';
                 downloadIcon.className = 'fas fa-check';
-                
+
                 setTimeout(() => {
                     downloadText.textContent = 'Télécharger mon CV';
                     downloadIcon.className = 'fas fa-download';
